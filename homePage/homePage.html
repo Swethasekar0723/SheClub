@@ -1,0 +1,145 @@
+<template>
+<lightning-card>
+  <article class="slds-card">
+    <div class="slds-card__header slds-grid">
+      <header class="slds-media slds-media_center slds-has-flexi-truncate">
+        </header>
+    </div>
+</article>
+        
+        <div class="slds-size">
+          <div class="slds-box slds-box_xxx-small slds-text-align_center slds-m-around_xxx-small">
+              <lightning-carousel> 
+                  <lightning-carousel-image
+                     img src = {Carocial}
+                     style="height:450px"
+                     >
+                  </lightning-carousel-image>
+                  <lightning-carousel-image
+                     img src = {Carocial2}
+                     style="height:450px"
+                     >
+                  </lightning-carousel-image>
+                  <lightning-carousel-image
+                     img src = {Carocial3}
+                     style="height:450px"
+                       >
+                  </lightning-carousel-image>
+              </lightning-carousel>
+          </div>
+      </div>
+        <lightning-card>
+          <div class="row" style=" padding-top: 20px;
+          padding-right: 60px;
+          padding-bottom: 20px;
+          padding-left: 100px;">
+                <div class="column">
+                <div class="container">
+                  <div class="card">
+                    <img src={ArticleImage1} alt="Avatar" class="image" >
+                    <div class="overlay">
+                  <div class="text">"Women belong in all places where decisions are being made. … It shouldn't be that women are the exception."
+                    ~ RUTH BADER GINSBURG ~</div>
+                        </div>
+                  </div>
+                </div>
+                </div>
+
+                <div class="column">
+                 <div class="container">
+                  <div class="card">
+                    <img src={ArticleImage2} alt="Avatar" class="image" >
+                <div class="overlay">
+                  <div class="text">"If you have only one smile in you,
+                    give it to the people you love.
+                    Don't be surly at home, then go out in the street
+                    and start grinning 'Good morning' at total strangers."
+                    ~ MAYA ANGELOU ~</div>
+                </div>
+              </div>
+              </div>
+              </div>
+              <div class="column">
+                <div class="container">
+                  <div class="card">
+                    <img src={ArticleImage3} alt="Avatar" class="image" >
+                <div class="overlay">
+                  <div class="text">"I raise up my voice—not so that I can shout, but so that those without a voice can be heard.We cannot all succeed when half of us are held back."
+                    ~ MALALA YOUSAFZAI ~</div>
+                </div>
+              </div>
+              </div>
+              </div>
+            </div>
+          </lightning-card>
+              &nbsp;
+              &nbsp;
+              <div class="row" style=" padding-top: 20px;
+              padding-right: 60px;
+              padding-bottom: 20px;
+              padding-left: 100px;">
+                <div class="column">
+                  <div class="container1">
+                    <div class="card1">
+                  <img src={Image1} alt="Avatar" class="image1">
+                  <div class="overlay1">KALPANACHAWALA</div>
+                </div>
+              </div>
+                </div>
+                <div class="column">
+                  <div class="container1">
+                    <div class="card1">
+                  <img src={Image2} alt="Avatar" class ="Image1" style="display: block;
+                  width:250px ;height:191px " >
+                  <div class="overlay1">MOTHERTERASA </div>
+                  </div>
+                </div>
+                </div>
+                <div class="column">
+                  <div class="container1">
+                    <div class="card1">
+                  <img src={Image3} alt="Avatar" class ="Image2" style="display: block;
+                  width:250px ;height:185px ">
+                  <div class="overlay1">KIRAN BEDI</div>
+                </div>
+              </div>
+                </div>
+          </div>
+          <lightning-record-edit-form record-id={recordId} object-api-name="Contact" 
+    onsuccess={handleSuccess} onsubmit ={handleSubmit}>
+<lightning-messages>
+</lightning-messages>
+<lightning-output-field field-name="AccountId">
+</lightning-output-field>
+<lightning-input-field field-name="Name">
+</lightning-input-field>
+<lightning-input-field field-name="Phone">
+</lightning-input-field>
+<lightning-input-field field-name="Email">
+</lightning-input-field>
+<lightning-input-field field-name="Subject__c">
+</lightning-input-field>
+<lightning-input-field field-name="Message__c">
+</lightning-input-field>
+<lightning-button class="slds-m-top_small" variant="brand" type="submit" name="Submit" label="Update">
+</lightning-button>
+</lightning-record-edit-form>
+
+    </lightning-card>
+    <footer class="social-footer">
+      <div class="social-footer-left">
+          <!-- <img src={SheclubLogo}> -->
+      </div>
+      <p>© 2018 2019 <b>Kloudone Inc.</b>All Rights Reserved </p>
+      <div class="social-footer-icons">
+          <ul class="menu simple">
+              <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          </ul>
+      </div>
+  </footer>
+</template>
